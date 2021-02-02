@@ -1,9 +1,9 @@
 import logo from './logo.svg';
-
+import { NavBar } from './components/zero/NavBar'
 
 function App() {
   return (
-    <div>Hello world!</div>
+    <NavBar />
   );
 }
 
