@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/zero-app/static/css/main.1e281d3d.chunk.css",
-    "main.js": "/zero-app/static/js/main.3cbb7b2d.chunk.js",
-    "main.js.map": "/zero-app/static/js/main.3cbb7b2d.chunk.js.map",
+    "main.js": "/zero-app/static/js/main.59b14914.chunk.js",
+    "main.js.map": "/zero-app/static/js/main.59b14914.chunk.js.map",
     "runtime-main.js": "/zero-app/static/js/runtime-main.977abe99.js",
     "runtime-main.js.map": "/zero-app/static/js/runtime-main.977abe99.js.map",
-    "static/js/2.6cb27bf8.chunk.js": "/zero-app/static/js/2.6cb27bf8.chunk.js",
-    "static/js/2.6cb27bf8.chunk.js.map": "/zero-app/static/js/2.6cb27bf8.chunk.js.map",
+    "static/js/2.81fd50b2.chunk.js": "/zero-app/static/js/2.81fd50b2.chunk.js",
+    "static/js/2.81fd50b2.chunk.js.map": "/zero-app/static/js/2.81fd50b2.chunk.js.map",
     "static/js/3.ec9582d7.chunk.js": "/zero-app/static/js/3.ec9582d7.chunk.js",
     "static/js/3.ec9582d7.chunk.js.map": "/zero-app/static/js/3.ec9582d7.chunk.js.map",
     "index.html": "/zero-app/index.html",
     "static/css/main.1e281d3d.chunk.css.map": "/zero-app/static/css/main.1e281d3d.chunk.css.map",
-    "static/js/2.6cb27bf8.chunk.js.LICENSE.txt": "/zero-app/static/js/2.6cb27bf8.chunk.js.LICENSE.txt"
+    "static/js/2.81fd50b2.chunk.js.LICENSE.txt": "/zero-app/static/js/2.81fd50b2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.977abe99.js",
-    "static/js/2.6cb27bf8.chunk.js",
+    "static/js/2.81fd50b2.chunk.js",
     "static/css/main.1e281d3d.chunk.css",
-    "static/js/main.3cbb7b2d.chunk.js"
+    "static/js/main.59b14914.chunk.js"
   ]
 }
