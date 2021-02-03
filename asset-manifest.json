@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/zero-app/static/css/main.1e281d3d.chunk.css",
-    "main.js": "/zero-app/static/js/main.59b14914.chunk.js",
-    "main.js.map": "/zero-app/static/js/main.59b14914.chunk.js.map",
+    "main.js": "/zero-app/static/js/main.2aa23b10.chunk.js",
+    "main.js.map": "/zero-app/static/js/main.2aa23b10.chunk.js.map",
     "runtime-main.js": "/zero-app/static/js/runtime-main.977abe99.js",
     "runtime-main.js.map": "/zero-app/static/js/runtime-main.977abe99.js.map",
     "static/js/2.81fd50b2.chunk.js": "/zero-app/static/js/2.81fd50b2.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.977abe99.js",
     "static/js/2.81fd50b2.chunk.js",
     "static/css/main.1e281d3d.chunk.css",
-    "static/js/main.59b14914.chunk.js"
+    "static/js/main.2aa23b10.chunk.js"
   ]
 }
