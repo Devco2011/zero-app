@@ -1,9 +1,12 @@
-import logo from './logo.svg';
-import { NavBar } from './components/zero/NavBar'
+import { Route } from 'react-router-dom';
+import { NavBar } from './components/zero/NavBar';
+import { ApplicationViews } from './components/ApplicationViews';
 
 function App() {
   return (
-    <NavBar />
+    <Route>
+      <ApplicationViews />
+    </Route>
   );
 }
 
