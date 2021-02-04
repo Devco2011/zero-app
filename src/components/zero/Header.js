@@ -13,16 +13,6 @@ export const Header = () => {
                 <Row>
                     <Col>
                         <h2>This is the new Header.</h2></Col>
-                    {isLoggedIn &&
-                        <>
-                            <Button className="nav-link text-right" variant="link" onClick={logout} style={{ border: "0" }}>Logout</Button>
-                        </>
-                    }
-                    {!isLoggedIn &&
-                        <>
-                            <NavItem className="nav-link text-right" variant="link"><RRNavLink to="/login">Login to Track Trash</RRNavLink></NavItem>
-                        </>
-                    }
                 </Row>
             </Container>
         </>

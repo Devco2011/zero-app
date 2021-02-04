@@ -30,7 +30,7 @@ export const Login = () => {
             <Container fluid="xl">
                 <Row>
                     <Col className="m-2" md={6}>
-                        <h5 className="username">Please sign in.</h5>
+                        <h5 className="username">Sign in to track your trash.</h5>
                         <Form onSubmit={loginSubmit} >
                             <fieldset>
                                 <Form.Group controlId="formBasicEmail" className="mb-2">
@@ -51,8 +51,8 @@ export const Login = () => {
                         <h5 className="username">
                             Need an account?
         </h5>
-                        <Link to="register" className="btn btn-block btn-outline-success">Create one with your email</Link>
-                        <Button block onClick={loginGoogle} variant="outline-success">Continue with Google</Button>
+                        <Link to="register" className="btn btn-block btn-outline-secondary">Create one with your email</Link>
+                        <Button block onClick={loginGoogle} variant="outline-secondary">Continue with Google</Button>
 
                     </Col>
                 </Row>

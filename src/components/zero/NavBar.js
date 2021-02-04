@@ -1,11 +1,14 @@
-import { React } from 'react';
-import { Navbar, Nav, Container, Button, NavDropdown } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { React, useState, useContext } from 'react';
+import { FirebaseContext } from "../fbAuth/FirebaseProvider";
+import { Navbar, Nav, Container, Button, NavDropdown, NavItem } from 'react-bootstrap';
+import { NavLink as RRNavLink } from "react-router-dom";
 
 export const NavBar = () => {
+    const { isLoggedIn, logout } = useContext(FirebaseContext);
+    const [expanded, setExpanded] = useState(false);
 
     return (
-        <Navbar collapseOnSelect expand="md navbar-dark bg-primary" sticky="top">
+        <Navbar collapseOnSelect expand="md navbar-light bg-primary" sticky="top">
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Brand href="#/">ZERO</Navbar.Brand>
             <Navbar.Collapse id="responsive-navbar-nav">
@@ -27,6 +30,16 @@ export const NavBar = () => {
                         <NavDropdown.Item href="#/Compost-Resources">Local Resources</NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link href="#/Track">TRACK YOUR TRASH</Nav.Link>
+                    {isLoggedIn &&
+                        <>
+                            <Button className="nav-link text-right" variant="link" onClick={logout} style={{ border: "0" }}>LOGOUT</Button>
+                        </>
+                    }
+                    {!isLoggedIn &&
+                        <>
+                            <Nav.Link href="#/login">LOGIN</Nav.Link>
+                        </>
+                    }
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
