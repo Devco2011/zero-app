@@ -8,7 +8,10 @@ import { FirebaseConfig } from "./components/fbAuth/FirebaseConfig";
 import firebase from "firebase/app";
 
 
+
 firebase.initializeApp(FirebaseConfig);
+
+
 
 ReactDOM.render(
   <React.StrictMode>

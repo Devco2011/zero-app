@@ -58,7 +58,7 @@ export const FirebaseProvider = (props) => {
 
 
     const signInWithGoogle = () => {
-        return firebase.auth().signInWithRedirect(provider)
+        return firebase.auth().signInWithPopup(provider)
             .then(savedUserProfile => {
                 console.log('savedU', savedUserProfile)
                 sessionStorage.setItem("userProfile", JSON.stringify(savedUserProfile.user))
