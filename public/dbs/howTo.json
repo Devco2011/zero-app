@@ -1,0 +1,268 @@
+[
+    {
+        "id": 0,
+        "title": "Composting Guide for Apartment Living",
+        "description": "Tips for composting if you live in an apartment",
+        "url": "https://www.goingzerowaste.com/blog/composting-for-apartments",
+        "video": false
+    },
+    {
+        "id": 1,
+        "title": "How to Compost at Home",
+        "description": "Learn about composting at home",
+        "url": "https://www.npr.org/2020/04/07/828918397/how-to-compost-at-home",
+        "video": false
+    },
+    {
+        "id": 2,
+        "title": "How to Compost",
+        "description": "A short video covering the basics of home composting",
+        "url": "https://youtu.be/fB3iS4HM9bU",
+        "video": true
+    },
+    {
+        "id": 3,
+        "title": "How to Make a Compost Heap",
+        "description": "10 tips for making a compost heap",
+        "url": "https://youtu.be/eObXJJXZXOo",
+        "video": true
+    },
+    {
+        "id": 4,
+        "title": "5 Steps to Quick Compost",
+        "description": "Use this method to get garden-ready black gold in just two weeks",
+        "url": "https://www.thisoldhouse.com/gardening/21015413/5-steps-to-quick-compost",
+        "video": false
+    },
+    {
+        "id": 5,
+        "title": "How to Make Compost",
+        "description": "A simple, smell free process for composting at home",
+        "url": "https://youtu.be/mDIVpJgjoXQ",
+        "video": true
+    },
+    {
+        "id": 6,
+        "title": "Composting",
+        "description": "A comprehensive guide from the EPA",
+        "url": "https://www.epa.gov/recycle/composting-home",
+        "video": false
+    },
+    {
+        "id": 7,
+        "title": "Composting 101",
+        "description": "How and why you should start composting now",
+        "url": "https://www.budgetdumpster.com/blog/how-to-compost-at-home/",
+        "video": false
+    },
+    {
+        "id": 8,
+        "title": "10 Home Items You Can Reuse Over and Over Again",
+        "description": "Easy ideas for reusing home items",
+        "url": "https://www.onegreenplanet.org/lifestyle/home-items-you-can-reuse-over-and-over-again/",
+        "video": false
+    },
+    {
+        "id": 9,
+        "title": "Reuse Tips",
+        "description": "Unleash your creativity, save money, and protect the environment by reusing your things",
+        "url": "http://www.lesswaste.org.uk/reuse/reuse-tips/",
+        "video": false
+    },
+    {
+        "id": 10,
+        "title": "How to Reuse 13 Things You Would Normally Throw Away",
+        "description": "Creative ideas for reusing items",
+        "url": "https://myheartbeets.com/reuse-13-things-normally-throw-away/",
+        "video": false
+    },
+    {
+        "id": 11,
+        "title": "Reducing and Reusing Basics",
+        "description": "Info from the EPA",
+        "url": "https://www.epa.gov/recycle/reducing-and-reusing-basics",
+        "video": false
+    },
+    {
+        "id": 12,
+        "title": "5 Items You Should Stop Throwing Away",
+        "description": "How to reuse waste materials",
+        "url": "https://youtu.be/wMXEjd-U_Q0",
+        "video": true
+    },
+    {
+        "id": 13,
+        "title": "100 Things You Can Reuse or Repurpose",
+        "description": "Creative ideas for reusing or repurposing",
+        "url": "https://youtu.be/SvtOyBa0TsE",
+        "video": true
+    },
+    {
+        "id": 14,
+        "title": "Reduce, Reuse, and Recycle Tips for Kids",
+        "description": "Great ways to get the kids involved",
+        "url": "https://www.reusethisbag.com/articles/reduce-reuse-and-recycle-tips-for-kids",
+        "video": false
+    },
+    {
+        "id": 15,
+        "title": "36 Smart Ideas to Reuse Old Things",
+        "description": "Amazing repurposing hacks",
+        "url": "https://youtu.be/hOuIWjTf8gI",
+        "video": true
+    },
+    {
+        "id": 16,
+        "title": "33 Ideas for Reusing Platic at Home",
+        "description": "Tricks for reusing the plastic around you",
+        "url": "https://youtu.be/VP_Fk8-vGVg",
+        "video": true
+    },
+    {
+        "id": 17,
+        "title": "How to Use Less Plastic and Packaging in Your Kitchen",
+        "description": "Tips and tricks for reducing and reusing plastic in the kitchen",
+        "url": "https://foodprint.org/blog/keeping-kitchen-waste-minimum/?gclid=Cj0KCQiAgomBBhDXARIsAFNyUqMexxATPR63URk51uBvISTUKPOFothflWsIJCiGd8z_FUF-NuHEnz8aAg10EALw_wcB",
+        "video": false
+    },
+    {
+        "id": 18,
+        "title": "30 Ways to Upcycle Plastic Bottles",
+        "description": "Tips for reusing plastic bottles at home and the office",
+        "url": "https://www.lifehack.org/articles/lifestyle/30-mind-blowing-ways-upcycle-plastic-bottles-home-and-the-office.html",
+        "video": false
+    },
+    {
+        "id": 19,
+        "title": "Eight Ways to Reduce Waste",
+        "description": "Learn how you can make small changes that will have a lasting effect",
+        "url": "https://www.nature.org/en-us/about-us/where-we-work/united-states/delaware/stories-in-delaware/delaware-eight-ways-to-reduce-waste/",
+        "video": false
+    },
+    {
+        "id": 20,
+        "title": "25 Ways to Reduce Waste at Home",
+        "description": "Reduce waste and save time and money",
+        "url": "https://www.todaysparent.com/family/family-life/ways-to-reduce-waste-at-home-even-if-you-are-exhausted/",
+        "video": false
+    },
+    {
+        "id": 21,
+        "title": "Reducing Waste: What You Can Do",
+        "description": "Comprehensive tips from the EPA",
+        "url": "https://www.epa.gov/recycle/reducing-waste-what-you-can-do",
+        "video": false
+    },
+    {
+        "id": 22,
+        "title": "Small Ways to Reduce Waste",
+        "description": "Easy ways to reduce daily waste- including how to cut down junk mail being sent to you",
+        "url": "https://youtu.be/mxmuUfaF3sI",
+        "video": true
+    },
+    {
+        "id": 23,
+        "title": "23 Easy Ways to Reduce Plastic in Your Life",
+        "description": "How plastic harms the environment and how to reduce it",
+        "url": "https://stephanieschuttler.com/23-easy-ways-to-reduce-your-plastic-use-in-your-daily-life/",
+        "video": false
+    },
+    {
+        "id": 24,
+        "title": "10 Simple Ways to Reduce Waste",
+        "description": "Sustainable living tips",
+        "url": "https://cleanmyspace.com/10-simple-ways-to-reduce-waste/?jwsource=cl",
+        "video": false
+    },
+    {
+        "id": 25,
+        "title": "Reduce, Reuse, Recycle",
+        "description": "Educational video for kids",
+        "url": "https://youtu.be/OasbYWF4_S8",
+        "video": true
+    },
+    {
+        "id": 26,
+        "title": "Recycling 101",
+        "description": "What is recyclable and non recyclable",
+        "url": "https://youtu.be/kozJmBpLDF8",
+        "video": true
+    },
+    {
+        "id": 27,
+        "title": "How to Properly Recycle at Home",
+        "description": "Learn how to properly recycle at home",
+        "url": "https://youtu.be/jsp7mgYv3aI",
+        "video": true
+    },
+    {
+        "id": 28,
+        "title": "What Happens to Your Recycling",
+        "description": "Understand where recycling goes, from the bins to the plant",
+        "url": "https://youtu.be/LvAmAnBEC7w",
+        "video": true
+    },
+    {
+        "id": 29,
+        "title": "How2Recycle",
+        "description": "How2Recycle is a standardized labeling system that communicates instructions",
+        "url": "https://how2recycle.info/",
+        "video": false
+    },
+    {
+        "id": 30,
+        "title": "How Do I Recycle?",
+        "description": "A guide from the EPA",
+        "url": "https://www.epa.gov/recycle/how-do-i-recycle-common-recyclables",
+        "video": false
+    },
+    {
+        "id": 31,
+        "title": "7 Tips to Recycle Better",
+        "description": "You're doing it wrong: 7 tips to recycle better",
+        "url": "https://www.earthday.org/youre-doing-it-wrong-7-tips-to-recycle-better/",
+        "video": false
+    },
+    {
+        "id": 32,
+        "title": "Recycle Guide",
+        "description": "Lots of info about recycling, plus educational resources",
+        "url": "https://www.recycleguide.org/how-recycle-dispose-rolloff-dumpsters/",
+        "video": false
+    },
+    {
+        "id": 33,
+        "title": "Dangerous Household Chemicals",
+        "description": "Reduce hazardous waste at home",
+        "url": "https://www.everydayhealth.com/healthy-home-photos/7-ways-to-reduce-hazardous-waste-at-home.aspx",
+        "video": false
+    },
+    {
+        "id": 34,
+        "title": "Hazardous Waste Recycling",
+        "description": "Information from the EPA",
+        "url": "https://www.epa.gov/hw/hazardous-waste-recycling",
+        "video": false
+    },
+    {
+        "id": 35,
+        "title": "Recycle Right Nashville",
+        "description": "Detailed instructions for proper recycling in Nashville",
+        "url": "https://www.tectn.org/recyclerightnashville.html",
+        "video": false
+    },
+    {
+        "id": 36,
+        "title": "Compost in TN",
+        "description": "Information about composting in TN",
+        "url": "https://www.tectn.org/comepostyourcompost.html",
+        "video": false
+    },
+    {
+        "id": 37,
+        "title": "Go Zero Waste",
+        "description": "Ways to reduce waste from TN Environmental Council",
+        "url": "https://www.tectn.org/zerowaste.html",
+        "video": false
+    }
+]
