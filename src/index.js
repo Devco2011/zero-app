@@ -1,9 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from "react-router-dom"
+import { HashRouter as Router } from "react-router-dom"
 import './styles/zeroCustom.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { FirebaseConfig } from "./components/fbAuth/FirebaseConfig";
+import firebase from "firebase/app";
+
+
+
+firebase.initializeApp(FirebaseConfig);
+
+
 
 ReactDOM.render(
   <React.StrictMode>
