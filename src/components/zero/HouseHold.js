@@ -2,15 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { getResourceCategories } from "./../../modules/APICalls";
 import firebase from "firebase";
 import { Container, Row, Col, CardDeck } from 'react-bootstrap';
-import { ReduceResourcesCard } from './ReduceResourcesCard';
-import { Household } from './HouseHold';
+import { ReduceResourcesCard } from './ReduceResourcesCard'
 
-export const ReduceResources = () => {
+export const Household = () => {
 
     const [resourceArray, setResourceArray] = useState([])
 
     const getAllResources = () => {
-        getResourceCategories(7)
+        getResourceCategories(6)
             .then(data => {
                 let newArray = Object.keys(data).map((key, index) => {
                     data[key].id = key;
@@ -31,10 +30,10 @@ export const ReduceResources = () => {
 
     return (
         <>
-            <Container>
+            <Container className="mt-5">
                 <Row>
-                    <Col className="col-12">
-                        <h3>Reduce Resources</h3>
+                    <Col className="col-12 pl-4">
+                        <h5>Household/Kitchen/Cleaning</h5>
                     </Col>
                 </Row>
                 <CardDeck className="mt-2">
@@ -42,9 +41,7 @@ export const ReduceResources = () => {
                         return <ReduceResourcesCard resource={resource} key={resource.id} />
                     })}
                 </CardDeck>
-                <Row>
-                    <Household />
-                </Row>
+
             </Container>
         </>
     )

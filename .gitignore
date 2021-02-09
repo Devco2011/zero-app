@@ -8,6 +8,9 @@
 # testing
 /coverage
 FirebaseConfig.js
+database.json
+resourcesCategories.json
+farmersMarkets.json
 
 # production
 /build

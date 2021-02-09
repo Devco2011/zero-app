@@ -1,11 +1,11 @@
 import { React, useState, useContext } from 'react';
 import { FirebaseContext } from "../fbAuth/FirebaseProvider";
-import { Navbar, Nav, Container, Button, NavDropdown, NavItem } from 'react-bootstrap';
+import { Navbar, Nav, Button, NavDropdown } from 'react-bootstrap';
 import { NavLink as RRNavLink } from "react-router-dom";
 
 export const NavBar = () => {
     const { isLoggedIn, logout } = useContext(FirebaseContext);
-    const [expanded, setExpanded] = useState(false);
+
 
     return (
         <Navbar collapseOnSelect expand="md navbar-light bg-primary" sticky="top">

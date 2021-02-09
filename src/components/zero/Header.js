@@ -1,11 +1,9 @@
-import React, { useState, useContext } from 'react';
-import { FirebaseContext } from "../fbAuth/FirebaseProvider";
-import { NavLink as RRNavLink } from "react-router-dom";
-import { Container, Row, Col, Button, NavItem } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import { getCategories, getResourceCategories } from '../../modules/APICalls';
+import firebase from 'firebase';
 
 export const Header = () => {
-    const { isLoggedIn, logout } = useContext(FirebaseContext);
-    const [expanded, setExpanded] = useState(false);
 
     return (
         <>
