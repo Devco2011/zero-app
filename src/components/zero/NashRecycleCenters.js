@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { getResourceCategories } from "./../../modules/APICalls";
+import { getRecyclingCenters, getResourceCategories } from "./../../modules/APICalls";
 import { Container, Row, Col, CardDeck } from 'react-bootstrap';
-import { ReduceResourcesCard } from './ReduceResourcesCard'
+import { NashRecycleCard } from './NashRecycleCard';;
 
-export const CompostResources = () => {
+
+export const NashRecycleCenters = () => {
 
     const [resourceArray, setResourceArray] = useState([])
 
     const getAllResources = () => {
-        getResourceCategories(3)
+        getRecyclingCenters()
             .then(data => {
                 let newArray = Object.keys(data).map((key, index) => {
                     data[key].id = key;
@@ -29,17 +30,18 @@ export const CompostResources = () => {
 
     return (
         <>
-            <Container className="mt-5">
+            <Container className="mb-3">
                 <Row>
-                    <Col className="col-12 pl-4">
-                        <h5>Local Compost Resources</h5>
+                    <Col className="col-12">
+                        <h3>Metro Works Recycling Centers and Drop-off Locations</h3>
                     </Col>
                 </Row>
                 <CardDeck className="mt-2">
                     {resourceArray.map(resource => {
-                        return <ReduceResourcesCard resource={resource} key={resource.id} />
+                        return <NashRecycleCard resource={resource} key={resource.id} />
                     })}
                 </CardDeck>
+                <hr></hr>
 
             </Container>
         </>

@@ -60,3 +60,20 @@ export const getHowToCategories = (catId) => {
         })
 
 }
+
+export const getFarmersMarkets = () => {
+    return fetch(`${dataURL}/zerodb/farmersMarkets.json/`)
+        .then(response => response.json())
+}
+
+export const getRecyclingCenters = () => {
+    return fetch(`https://data.nashville.gov/resource/j7nq-7ct5.json`)
+        .then(response => response.json())
+
+}
+
+
+//Nashville.gov api Key secret: 1srolkartq8fx54ua1n7glxaswtygatll7y6jxhv9j6083t1oq
+// api key id: 4pcqdx76po3b4zoi8u5h9h22v
+// app token: sR1VjDcjqX0htyE7IlHRT1L43
+// secret token: gMcLB9jmZCB1J9HixroaXxrOhU8fm6P5dTwY

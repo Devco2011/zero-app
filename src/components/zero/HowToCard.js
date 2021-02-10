@@ -8,7 +8,7 @@ export const HowToCard = ({ howTo }) => {
     return (
         <>
             <IconContext.Provider value={{ style: { verticalAlign: 'middle' }, color: "secondary", className: "global-class-name" }}>
-                <Col className="col-12 col-md-6 pl-3 mt-5">
+                <Col className="col-12 col-md-10 pl-3 mt-3">
 
                     <Card.Title ><FaExternalLinkAlt className="pr-1" /> <Nav.Link href={howTo.url}>{howTo.title}</Nav.Link> </Card.Title>
                     <Card.Text>
