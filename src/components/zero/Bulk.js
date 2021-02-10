@@ -1,19 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { getResourceCategories } from "./../../modules/APICalls";
 import { Container, Row, Col, CardDeck } from 'react-bootstrap';
-import { ReduceResourcesCard } from './ReduceResourcesCard';
-import { Household } from './HouseHold';
-import { Drink } from './Drink'
-import { Secondhand } from './Secondhand'
-import { Bulk } from './Bulk';
-import { FarmersMarkets } from './FarmersMarkets'
+import { ReduceResourcesCard } from './ReduceResourcesCard'
 
-export const ReduceResources = () => {
+export const Bulk = () => {
 
     const [resourceArray, setResourceArray] = useState([])
 
     const getAllResources = () => {
-        getResourceCategories(7)
+        getResourceCategories(8)
             .then(data => {
                 let newArray = Object.keys(data).map((key, index) => {
                     data[key].id = key;
@@ -34,10 +29,10 @@ export const ReduceResources = () => {
 
     return (
         <>
-            <Container className="mb-3">
+            <Container className="mt-5">
                 <Row>
-                    <Col className="col-12">
-                        <h3>Bath and Personal Care</h3>
+                    <Col className="col-12 pl-4">
+                        <h5>Bulk and Unpackaged Food</h5>
                     </Col>
                 </Row>
                 <CardDeck className="mt-2">
@@ -45,27 +40,6 @@ export const ReduceResources = () => {
                         return <ReduceResourcesCard resource={resource} key={resource.id} />
                     })}
                 </CardDeck>
-                <hr></hr>
-                <Row>
-                    <Household />
-                </Row>
-                <hr></hr>
-                <Row>
-                    <Drink />
-                </Row>
-                <hr></hr>
-                <Row>
-                    <Secondhand />
-                </Row>
-                <hr></hr>
-                <Row>
-                    <Bulk />
-                </Row>
-                <hr></hr>
-                <Row>
-                    <FarmersMarkets />
-                </Row>
-                <hr></hr>
 
             </Container>
         </>

@@ -60,3 +60,8 @@ export const getHowToCategories = (catId) => {
         })
 
 }
+
+export const getFarmersMarkets = () => {
+    return fetch(`${dataURL}/zerodb/farmersMarkets.json/`)
+        .then(response => response.json())
+}
