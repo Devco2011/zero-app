@@ -1,0 +1,254 @@
+[
+    {
+        "id": 0,
+        "description": "Refillable home and personal products, and much more",
+        "name": "The Good Fill",
+        "phone": "615-795-8237",
+        "url": "https://thegoodfill.co"
+    },
+    {
+        "id": 1,
+        "description": "Refillable home and personal products",
+        "name": "Sage Refill Market",
+        "phone": "615-801-4565",
+        "url": "https://sagerefillmarket.com"
+    },
+    {
+        "id": 2,
+        "description": "Wind and beer growlers and fills",
+        "name": "Red",
+        "phone": "615-646-1400",
+        "url": "https://redspirits.com"
+    },
+    {
+        "id": 3,
+        "description": "Beer growlers and fills",
+        "name": "The Filling Station East",
+        "phone": "615-457-3535",
+        "url": "https://brewstogo.com/east-nashville"
+    },
+    {
+        "id": 4,
+        "description": "Beer growlers and fills",
+        "name": "The Filling Station 12 South",
+        "phone": "615-818-0012",
+        "url": "https://brewstogo.com/12-south"
+    },
+    {
+        "id": 5,
+        "description": "Beer growlers and fills",
+        "name": "Fugal MacDoogal",
+        "phone": "615-242-3863",
+        "url": "https://fugalmacdoogal.com"
+    },
+    {
+        "id": 6,
+        "description": "Beer growlers and fills",
+        "name": "Sinkers",
+        "phone": "615-262-2300",
+        "url": "https://www.sinkerswineandspirits.com"
+    },
+    {
+        "id": 7,
+        "description": "Bulk food, beer growlers, bulk rice, grains, flours, pasta, soups, and much more",
+        "name": "Whole Foods",
+        "phone": "615-747-1650",
+        "url": "https://www.wholefoodsmarket.com/stores"
+    },
+    {
+        "id": 8,
+        "description": "Find just about anything here, from vintage clothes to furniture",
+        "name": "Nashville Flea Market",
+        "phone": "615-862-5016",
+        "url": "http://www.thefairgrounds.com/fleamarket/dates.asp"
+    },
+    {
+        "id": 9,
+        "description": "Great deals for construction projects, furniture, light fixtures, and even appliances",
+        "name": "Habitat for Humanity ReStore",
+        "phone": "615-942-1291",
+        "url": "https://www.habitatnashville.org/restore"
+    },
+    {
+        "id": 10,
+        "description": "Clothes, furniture, and just about anything else you can imagine",
+        "name": "Goodwill",
+        "phone": "615-742-4151",
+        "url": "https://giveit2goodwill.org"
+    },
+    {
+        "id": 11,
+        "description": "Clothes, shoes, furniture, books, music and more",
+        "name": "Music City Thrift",
+        "phone": "615-445-7818",
+        "url": "https://www.facebook.com/MusicCityThriftNashville"
+    },
+    {
+        "id": 12,
+        "description": "Thrift store with multiple locations around town",
+        "name": "Southern Thrift",
+        "phone": "615-833-1319",
+        "url": "https://www.facebook.com/SouthernThriftStores"
+    },
+    {
+        "id": 13,
+        "description": "Books, games, vinyl, and much more. Will buy your stuff",
+        "name": "McKay's",
+        "phone": "615-353-2595",
+        "url": "http://www.mckaybooks.com/"
+    },
+    {
+        "id": 14,
+        "description": "Books, textbooks, games, music, puzzles, and more",
+        "name": "Half Price Books",
+        "phone": "615-352-4005",
+        "url": "https://www.hpb.com/"
+    },
+    {
+        "id": 15,
+        "description": "Unpackaged bar soap, build-your-own soap scrub, loofas, platic-free bath gloves",
+        "name": "Thistle Farms",
+        "phone": "615-392-1140",
+        "url": "https://thistlefarms.org/"
+    },
+    {
+        "id": 16,
+        "description": "Bulk olive oil, vinegar and more",
+        "name": "Herban Market",
+        "phone": "615-567-6240",
+        "url": "https://www.herban-market.com"
+    },
+    {
+        "id": 17,
+        "description": "Olive oil refills on bottles purchased in store",
+        "name": "Olivia",
+        "phone": "615-771-9595",
+        "url": "https://www.herban-market.com"
+    },
+    {
+        "id": 18,
+        "description": "Looseleaf teas, bulk spices and herbs, foraging classes",
+        "name": "High Garden",
+        "phone": "615-555-5555",
+        "url": "https://www.highgardentea.com/"
+    },
+    {
+        "id": 19,
+        "description": "Bulk dried fruit, nuts, spices, coffee, tea, beans, peas, grains, and more",
+        "name": "Sprouts",
+        "phone": "615-209-7940",
+        "url": "https://www.sprouts.com/"
+    },
+    {
+        "id": 20,
+        "description": "Unpackaged bulk produce, bulk dried goods, milk refill program, water refill",
+        "name": "The Produce Place",
+        "phone": "615-383-2664",
+        "url": "https://produceplace.com/"
+    },
+    {
+        "id": 21,
+        "description": "Bulk coffee, tea, spices, nuts, snacks, unpackaged bar soap, milk refill",
+        "name": "Turnip Truck",
+        "phone": "615-953-7075",
+        "url": "http://theturniptruck.com/"
+    },
+    {
+        "id": 22,
+        "description": "Bulk coffee, tea, spices, nuts, snacks, unpackaged bar soap, milk refill",
+        "name": "Turnip Truck",
+        "phone": "615-953-7075",
+        "url": "http://theturniptruck.com/"
+    },
+    {
+        "id": 23,
+        "description": "Paper, craft items, art supplies, toys, wood, metal, and much more",
+        "name": "Turnip Green",
+        "phone": "615-720-7480",
+        "url": "https://www.turnipgreencreativereuse.org/"
+    },
+    {
+        "id": 24,
+        "description": "Craft and art supplies",
+        "name": "Smart!",
+        "phone": "615-454-5808",
+        "url": "https://smartartandcraft.org/donate/"
+    },
+    {
+        "id": 25,
+        "description": "Give away items online",
+        "name": "Freecycle.org",
+        "phone": "N/A",
+        "url": "https://groups.freecycle.org/group/NashvilleTN/posts/all"
+    },
+    {
+        "id": 26,
+        "description": "Donate toiletries, medicine, school supplies, clothing, and baby items",
+        "name": "Nashville Rescue Mission",
+        "phone": "615-255-2475",
+        "url": "https://nashvillerescuemission.org/"
+    },
+    {
+        "id": 27,
+        "description": "Lists local nonprofits and their donation needs",
+        "name": "HandsOn Nashville",
+        "phone": "615-255-2475",
+        "url": "https://nashvillerescuemission.org/"
+    },
+    {
+        "id": 28,
+        "description": "Curbside glass recycling",
+        "name": "Just Glass",
+        "phone": "615-669-4163",
+        "url": "https://nashvillerescuemission.org/"
+    },
+    {
+        "id": 29,
+        "description": "Curbside glass recycling",
+        "name": "RecycleNash",
+        "phone": "615-905-NASH",
+        "url": "http://www.recyclenash.com/"
+    },
+    {
+        "id": 30,
+        "description": "Picks up your food waste and brings you compost",
+        "name": "Compost Nashville",
+        "phone": "615-398-0209",
+        "url": "https://compostnashville.org/"
+    },
+    {
+        "id": 31,
+        "description": "Compost service for businesses",
+        "name": "The Compost Company",
+        "phone": "615-380-1090",
+        "url": "https://www.compostcompany.com/"
+    },
+    {
+        "id": 32,
+        "description": "Free organic waste drop-off site",
+        "name": "East Center",
+        "phone": "615-862-8631",
+        "url": "https://www.compostcompany.com/waste-disposal-services/#dropoff"
+    },
+    {
+        "id": 33,
+        "description": "Free organic waste drop-off site",
+        "name": "Ezell Pike Center",
+        "phone": "615-880-2530",
+        "url": "https://www.compostcompany.com/waste-disposal-services/#dropoff"
+    },
+    {
+        "id": 34,
+        "description": "Free organic waste drop-off site",
+        "name": "Omohundro",
+        "phone": "615-880-1955",
+        "url": "https://www.compostcompany.com/waste-disposal-services/#dropoff"
+    },
+    {
+        "id": 35,
+        "description": "Free organic waste drop-off site",
+        "name": "Anderson Lane Center",
+        "phone": "615-860-2588",
+        "url": "https://www.compostcompany.com/waste-disposal-services/#dropoff"
+    }
+]

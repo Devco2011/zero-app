@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Nashville Farmers Market",
+        "open": "Year-round",
+        "when": "Saturdays from 9am to noon",
+        "address": "900 Rosa L. Parks Boulevard, Nashville, TN 37208",
+        "url": "https://www.nashvillefarmersmarket.org/"
+    },
+    {
+        "name": "Richland Park Farmers Market",
+        "open": "Year-round",
+        "when": "Saturdays from 10am to noon",
+        "address": "4701 Charlotte Avenue, Nashville, TN 37209",
+        "url": "http://www.richlandparkfarmersmarket.com/"
+    },
+    {
+        "name": "12 South Farmers Market",
+        "open": "May to October",
+        "when": "Tuesdays from 4pm to 7pm",
+        "address": "3000 Granny White Pike, Nashville, TN 37204",
+        "url": "https://www.12southfarmersmarket.com/"
+    },
+    {
+        "name": "East Nashville Farmers Market",
+        "open": "April to October",
+        "when": "Saturdays from 9am to noon",
+        "address": "511 Woodland Street, Nashville, TN 37206",
+        "url": "https://eastnashvillemarket.com/"
+    },
+    {
+        "name": "Amqui Farmers Market",
+        "open": "May to August",
+        "when": "Sudays from 11am to 2pm",
+        "address": "303 Madison Street, Madison, TN 37115",
+        "url": "https://www.nashvillefarmersmarket.org/"
+    },
+    {
+        "name": "Hip Donelson Farmers Market",
+        "open": "May to October",
+        "when": "Saturdays from 9am to noon",
+        "address": "Two Rivers Mansion, 3130 McGavock Pike, Nashville, TN 37214",
+        "url": "https://www.hipdonelsonfarmersmarket.org/"
+    }
+]
