@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+
 import { Header } from './Header';
+import { BarChart } from './BarChart'
 
 
 export const Home = () => {
@@ -13,6 +15,7 @@ export const Home = () => {
                         <h2>This is Home.</h2>
                     </Col>
                 </Row>
+                <BarChart />
             </Container>
         </>
     )
