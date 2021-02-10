@@ -53,7 +53,6 @@ export const ReduceLearn = () => {
                     })}
                 </CardDeck>
                 <Pagination postsPerPage={postsPerPage} totalPosts={howToArray.length} paginate={paginate} />
-                <hr></hr>
             </Container>
         </>
     )
