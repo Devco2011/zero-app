@@ -42,6 +42,7 @@ export const ReduceResources = () => {
                         return <ReduceResourcesCard resource={resource} key={resource.id} />
                     })}
                 </CardDeck>
+                <hr></hr>
                 <Row>
                     <Household />
                 </Row>

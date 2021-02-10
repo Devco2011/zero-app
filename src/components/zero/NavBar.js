@@ -1,6 +1,7 @@
 import { React, useState, useContext } from 'react';
 import { FirebaseContext } from "../fbAuth/FirebaseProvider";
 import { Navbar, Nav, Button, NavDropdown } from 'react-bootstrap';
+import taco from "../images/zeroLogo.png";
 import { NavLink as RRNavLink } from "react-router-dom";
 
 export const NavBar = () => {
@@ -10,7 +11,13 @@ export const NavBar = () => {
     return (
         <Navbar collapseOnSelect expand="md navbar-light bg-primary" sticky="top">
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Brand href="#/">ZERO</Navbar.Brand>
+            <Navbar.Brand href="#/"><img
+                alt="logo"
+                src={taco}
+                width="50"
+                height="35"
+                className="d-inline-block align-top"
+            /></Navbar.Brand>
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
                     <NavDropdown title="REDUCE" id="collasible-nav-dropdown">
