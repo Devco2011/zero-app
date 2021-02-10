@@ -9,5 +9,15 @@
 
 // That would mean map or filter for each month
 
-// Example: january = () => {
-    //  januaryArray.length
+// Example: january = `${januaryArray.length}`
+
+// Then, in BarChart.js, create a new array that consists of all the months' totals 
+
+// Then the data property would  be:  data: newArray
+const today = () => {
+    const n = Date.now()
+    return (
+        console.log("date", n)
+    )
+}
+today()

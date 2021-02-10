@@ -1,3 +1,4 @@
+import firebase from 'firebase/app'
 import { FirebaseConfig } from './../components/fbAuth/FirebaseConfig';
 
 
@@ -71,6 +72,33 @@ export const getRecyclingCenters = () => {
         .then(response => response.json())
 
 }
+
+export const getTrash = () => {
+    return fetch(`${dataURL}/zerodb/trash.json/?orderBy="uid"&equalTo="${firebase.auth().currentUser.uid}"`)
+        .then(response => response.json())
+        .then(parsedResponse => {
+            console.log("trash call", parsedResponse)
+
+        })
+}
+getTrash()
+
+
+// const milli = () => {
+//     const n = new Date().toLocaleString()
+//     return (
+//         console.log("date", n)
+//     )
+// }
+// milli()
+
+// const currentDate = new Date("2/10/2021, 3:08:02 PM")
+// const currentMonth = currentDate.getMonth()
+// const currentYear = currentDate.getFullYear()
+
+// const date = (currentMonth + 1) + "/" + currentYear
+
+// console.log("dateTest", date)
 
 
 //Nashville.gov api Key secret: 1srolkartq8fx54ua1n7glxaswtygatll7y6jxhv9j6083t1oq
