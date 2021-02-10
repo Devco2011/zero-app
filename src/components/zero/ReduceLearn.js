@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { getHowToCategories } from "./../../modules/APICalls";
+import { Pagination } from './Pagination';
 import { Container, Row, Col, CardDeck } from 'react-bootstrap';
 import { HowToCard } from './HowToCard';
 
@@ -7,6 +8,9 @@ import { HowToCard } from './HowToCard';
 export const ReduceLearn = () => {
 
     const [howToArray, setHowToArray] = useState([])
+    const [loading, setLoading] = useState(false);
+    const [currentPage, setCurrentPage] = useState(1)
+    const [postsPerPage] = useState(3)
 
     const getAllHowTos = () => {
         getHowToCategories(0)
@@ -26,6 +30,14 @@ export const ReduceLearn = () => {
         getAllHowTos()
     }, [])
 
+    //get current posts
+    const indexOfLastPost = currentPage * postsPerPage;
+    const indexOfFirstPost = indexOfLastPost - postsPerPage;
+    const currentPosts = howToArray.slice(indexOfFirstPost, indexOfLastPost);
+
+    const paginate = pageNumber =>
+        setCurrentPage(pageNumber);
+
 
     return (
         <>
@@ -36,10 +48,11 @@ export const ReduceLearn = () => {
                     </Col>
                 </Row>
                 <CardDeck className="mt-2">
-                    {howToArray.map(howTo => {
+                    {currentPosts.map(howTo => {
                         return <HowToCard howTo={howTo} key={howTo.id} />
                     })}
                 </CardDeck>
+                <Pagination postsPerPage={postsPerPage} totalPosts={howToArray.length} paginate={paginate} />
                 <hr></hr>
             </Container>
         </>
