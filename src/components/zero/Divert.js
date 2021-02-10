@@ -3,12 +3,12 @@ import { getResourceCategories } from "./../../modules/APICalls";
 import { Container, Row, Col, CardDeck } from 'react-bootstrap';
 import { ReduceResourcesCard } from './ReduceResourcesCard'
 
-export const CompostResources = () => {
+export const Divert = () => {
 
     const [resourceArray, setResourceArray] = useState([])
 
     const getAllResources = () => {
-        getResourceCategories(3)
+        getResourceCategories(10)
             .then(data => {
                 let newArray = Object.keys(data).map((key, index) => {
                     data[key].id = key;
@@ -32,7 +32,7 @@ export const CompostResources = () => {
             <Container className="mt-5">
                 <Row>
                     <Col className="col-12 pl-4">
-                        <h5>Local Compost Resources</h5>
+                        <h5>Alternatives to the Landfill</h5>
                     </Col>
                 </Row>
                 <CardDeck className="mt-2">

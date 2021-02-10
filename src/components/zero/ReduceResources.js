@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { getResourceCategories } from "./../../modules/APICalls";
-import firebase from "firebase";
 import { Container, Row, Col, CardDeck } from 'react-bootstrap';
 import { ReduceResourcesCard } from './ReduceResourcesCard';
 import { Household } from './HouseHold';
+import { Drink } from './Drink'
+import { Secondhand } from './Secondhand'
+import { Bulk } from './Bulk';
+import { FarmersMarkets } from './FarmersMarkets'
 
 export const ReduceResources = () => {
 
@@ -31,10 +34,10 @@ export const ReduceResources = () => {
 
     return (
         <>
-            <Container>
+            <Container className="mb-3">
                 <Row>
                     <Col className="col-12">
-                        <h3>Reduce Resources</h3>
+                        <h3>Bath and Personal Care</h3>
                     </Col>
                 </Row>
                 <CardDeck className="mt-2">
@@ -46,6 +49,24 @@ export const ReduceResources = () => {
                 <Row>
                     <Household />
                 </Row>
+                <hr></hr>
+                <Row>
+                    <Drink />
+                </Row>
+                <hr></hr>
+                <Row>
+                    <Secondhand />
+                </Row>
+                <hr></hr>
+                <Row>
+                    <Bulk />
+                </Row>
+                <hr></hr>
+                <Row>
+                    <FarmersMarkets />
+                </Row>
+                <hr></hr>
+
             </Container>
         </>
     )
