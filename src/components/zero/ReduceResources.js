@@ -28,7 +28,6 @@ export const ReduceResources = () => {
         getAllResources()
     }, [])
 
-
     return (
         <>
             <Container>

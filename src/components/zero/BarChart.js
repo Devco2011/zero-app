@@ -10,7 +10,7 @@ export const BarChart = () => {
                     datasets: [
                         {
                             label: 'bags of trash',
-                            data: [12, 19, 3, 5, 2, 3],
+                            data: [12, 30, 3, 5, 2, 3],
                             backgroundColor: [
                                 'rgba(255, 99, 132, 0.2)',
                                 'rgba(54, 162, 235, 0.2)',
@@ -33,7 +33,7 @@ export const BarChart = () => {
                     ]
                 }}
                 height={300}
-                width={500}
+                width={400}
                 options={{
                     maintainAspectRatio: false,
                     scales: {
