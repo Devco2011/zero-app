@@ -12,7 +12,7 @@ export const Home = () => {
             <Header />
             <Container>
                 <Row className="justify-content-center">
-                    <Col className="col-12 col-md-12 p-4 pl-2">
+                    <Col className="col-12 col-md-12 p-4">
 
                         <div className="headerBorderBox">
                             <div className="headerBox">

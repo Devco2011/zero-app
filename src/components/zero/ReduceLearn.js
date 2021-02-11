@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { getHowToCategories } from "./../../modules/APICalls";
 import { Pagination } from './Pagination';
-import { Container, Row, Col, CardDeck } from 'react-bootstrap';
+import { Container, Row, Col, ListGroup } from 'react-bootstrap';
 import { HowToCard } from './HowToCard';
 
 
@@ -42,16 +42,16 @@ export const ReduceLearn = () => {
     return (
         <>
             <Container>
-                <Row>
-                    <Col className="col-12">
-                        <h3>How To Reduce</h3>
+                <Row className="justify-content-center mt-5 mb-3">
+                    <Col className="col-12 col-md-10">
+                        <h3>These articles and vides will get you on the way to less trash.</h3>
                     </Col>
                 </Row>
-                <CardDeck className="mt-2">
+                <ListGroup className="mt-2">
                     {currentPosts.map(howTo => {
                         return <HowToCard howTo={howTo} key={howTo.id} />
                     })}
-                </CardDeck>
+                </ListGroup>
                 <Pagination postsPerPage={postsPerPage} totalPosts={howToArray.length} paginate={paginate} />
             </Container>
         </>

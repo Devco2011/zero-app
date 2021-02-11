@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { getResourceCategories } from "./../../modules/APICalls";
 import { Container, Row, Col, CardDeck } from 'react-bootstrap';
+import { Pagination } from './Pagination';
 import { ReduceResourcesCard } from './ReduceResourcesCard'
 
 export const Bulk = () => {
 
     const [resourceArray, setResourceArray] = useState([])
+    const [loading, setLoading] = useState(false);
+    const [currentPage, setCurrentPage] = useState(1)
+    const [postsPerPage] = useState(2)
 
     const getAllResources = () => {
         getResourceCategories(8)
@@ -26,6 +30,12 @@ export const Bulk = () => {
         getAllResources()
     }, [])
 
+    const indexOfLastPost = currentPage * postsPerPage;
+    const indexOfFirstPost = indexOfLastPost - postsPerPage;
+    const currentPosts = resourceArray.slice(indexOfFirstPost, indexOfLastPost);
+
+    const paginate = pageNumber =>
+        setCurrentPage(pageNumber);
 
     return (
         <>
@@ -36,11 +46,11 @@ export const Bulk = () => {
                     </Col>
                 </Row>
                 <CardDeck className="mt-2">
-                    {resourceArray.map(resource => {
+                    {currentPosts.map(resource => {
                         return <ReduceResourcesCard resource={resource} key={resource.id} />
                     })}
                 </CardDeck>
-
+                <Pagination postsPerPage={postsPerPage} totalPosts={resourceArray.length} paginate={paginate} />
             </Container>
         </>
     )

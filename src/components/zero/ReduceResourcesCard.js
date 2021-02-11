@@ -1,25 +1,25 @@
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Row, Col, ListGroup, Nav } from 'react-bootstrap';
+import { FaExternalLinkAlt } from 'react-icons/fa';
+import { IconContext } from "react-icons";
 
 export const ReduceResourcesCard = ({ resource }) => {
     return (
         <>
 
-            <Col className="col-4 mt-5">
-                <Card className="h-100" style={{ width: '18rem' }} bg="primary">
-                    <Card.Body>
-                        <Card.Title >{resource.name}</Card.Title>
-                        <Card.Text>
-                            {resource.description}
-                        </Card.Text>
-                        <Card.Text>
-                            <strong>Phone: </strong>{resource.phone}
-                        </Card.Text>
-                        <Card.Link href={resource.url}>Website</Card.Link>
-                    </Card.Body>
-                </Card>
-            </Col>
+            <IconContext.Provider value={{ style: { verticalAlign: 'middle' }, color: "secondary", className: "global-class-name" }}>
+                <Col className="col-12 col-md-10 pl-3 mt-3">
 
+                    <Nav.Link href={resource.url}><ListGroup.Item action variant="secondary"><FaExternalLinkAlt className="pr-1" /> <p><h6>{resource.name}</h6></p>
+                        <p><strong>Description:</strong> {resource.description}</p>
+                        <p><strong>Phone:</strong> {resource.phone}</p>
+                        <p><strong>Website:</strong> {resource.url}</p> </ListGroup.Item></Nav.Link>
+
+
+
+
+                </Col>
+            </IconContext.Provider>
         </>
     )
 }
