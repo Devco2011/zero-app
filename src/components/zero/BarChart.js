@@ -1,7 +1,110 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Bar } from 'react-chartjs-2'
 
+import { getTrash } from './../../modules/APICalls'
+
 export const BarChart = () => {
+
+    const [newTrashArray, setNewTrashArray] = useState([])
+
+    const getAllTrash = () => {
+        getTrash()
+            .then(data => {
+                let newArray = Object.keys(data).map((key) => {
+                    data[key].fbid = key;
+                    return data[key];
+                });
+                setNewTrashArray(newArray)
+
+                console.log("dateArray", newArray)
+            })
+
+    }
+
+    useEffect(() => {
+        getAllTrash()
+    }, [])
+
+    const allDatesArray = newTrashArray.map((trash) => {
+        return (trash.date)
+    })
+
+    const monthAndYearArray = allDatesArray.map(item => {
+        const currentDate = new Date(item)
+
+
+        const month = currentDate.getMonth()
+        const year = currentDate.getFullYear()
+
+        return (
+            { month, year })
+    })
+    console.log("monthYear", monthAndYearArray)
+
+    let thisYear = new Date().getFullYear()
+
+    const janArray = monthAndYearArray.filter((item) => {
+        return item.month === 0 && item.year === thisYear
+    })
+    console.log("jan", janArray)
+    const febArray = monthAndYearArray.filter((item) => {
+        return item.month === 1 && item.year === thisYear
+    })
+    console.log("feb", febArray)
+    const marArray = monthAndYearArray.filter((item) => {
+        return item.month === 2 && item.year === thisYear
+    })
+    console.log("mar", marArray)
+    const aprArray = monthAndYearArray.filter((item) => {
+        return item.month === 3 && item.year === thisYear
+    })
+    console.log("apr", aprArray)
+    const mayArray = monthAndYearArray.filter((item) => {
+        return item.month === 4 && item.year === thisYear
+    })
+    console.log("may", mayArray)
+    const junArray = monthAndYearArray.filter((item) => {
+        return item.month === 5 && item.year === thisYear
+    })
+
+    const julArray = monthAndYearArray.filter((item) => {
+        return item.month === 6 && item.year === thisYear
+    })
+
+    const augArray = monthAndYearArray.filter((item) => {
+        return item.month === 7 && item.year === thisYear
+    })
+
+    const septArray = monthAndYearArray.filter((item) => {
+        return item.month === 8 && item.year === thisYear
+    })
+
+    const octArray = monthAndYearArray.filter((item) => {
+        return item.month === 9 && item.year === thisYear
+    })
+
+    const novArray = monthAndYearArray.filter((item) => {
+        return item.month === 10 && item.year === thisYear
+    })
+
+    const decArray = monthAndYearArray.filter((item) => {
+        return item.month === 11 && item.year === thisYear
+    })
+    let jan = janArray.length
+    let feb = febArray.length
+    let mar = marArray.length
+    let apr = aprArray.length
+    let may = mayArray.length
+    let jun = junArray.length
+    let jul = julArray.length
+    let aug = augArray.length
+    let sept = septArray.length
+    let oct = octArray.length
+    let nov = novArray.length
+    let dec = decArray.length
+
+
+
     return (
         <div>
             <Bar
@@ -10,7 +113,7 @@ export const BarChart = () => {
                     datasets: [
                         {
                             label: 'bags of trash',
-                            data: [12, 30, 3, 5, 2, 3],
+                            data: [`${jan}`, `${feb}`, `${mar}`, `${apr}`, `${may}`, `${jun}`, `${jul}`, `${aug}`, `${sept}`, `${oct}`, `${nov}`, `${dec}`],
                             backgroundColor: [
                                 'rgba(255, 99, 132, 0.2)',
                                 'rgba(54, 162, 235, 0.2)',

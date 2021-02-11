@@ -76,12 +76,12 @@ export const getRecyclingCenters = () => {
 export const getTrash = () => {
     return fetch(`${dataURL}/zerodb/trash.json/?orderBy="uid"&equalTo="${firebase.auth().currentUser.uid}"`)
         .then(response => response.json())
-        .then(parsedResponse => {
-            console.log("trash call", parsedResponse)
+    // .then(parsedResponse => {
+    //     console.log("trash call", parsedResponse)
 
-        })
+    // })
 }
-getTrash()
+
 
 
 // const milli = () => {
