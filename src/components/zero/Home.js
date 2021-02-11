@@ -38,24 +38,24 @@ export const Home = () => {
                     <Col className="col-12 col-md-4 mt-5 border-right">
                         <h6>Reduce</h6>
                         <p>The most important step for getting to zero waste.</p>
-                        <Button>Learn How</Button>
-                        <Button>Find Resources</Button>
+                        <Button variant="outline-secondary" onClick={event => window.location.href = "#/Reduce-Learn"}>Learn How</Button>{' '}
+                        <Button variant="outline-secondary" onClick={event => window.location.href = "#/Reduce-Resources"}>Find Resources</Button>
                     </Col>
                     <Col className="col-12 col-md-4 mt-5 pl-5"><h6>Reuse</h6>
                         <p>Reuse, repurpose, upcycle- whatever you call it, it's easy and it matters!</p>
-                        <Button>Learn How</Button>
-                        <Button>Find Resources</Button>
+                        <Button variant="outline-secondary" onClick={event => window.location.href = "#/Reuse-Learn"}>Learn How</Button>{' '}
+                        <Button variant="outline-secondary" onClick={event => window.location.href = "#/Reuse-Resources"}>Find Resources</Button>
                     </Col>
                 </Row>
                 <Row className="justify-content-center mt-5 mb-5">
                     <Col className="col-12 col-md-4 mt-5 border-right"><h6>Recycle</h6>
                         <p>Make sure you know what to take and where to take it.</p>
-                        <Button>Learn How</Button>
-                        <Button>Find Resources</Button></Col>
+                        <Button variant="outline-secondary" onClick={event => window.location.href = "#/Recycle-Learn"}>Learn How</Button>{' '}
+                        <Button variant="outline-secondary" onClick={event => window.location.href = "#/Recycle-Resources"}>Find Resources</Button></Col>
                     <Col className="col-12 col-md-4 mt-5 pl-5 mb-5"><h6>Compost</h6>
                         <p>Food and organic matter make up 60% of our landfills. Make compost instead.</p>
-                        <Button>Learn How</Button>
-                        <Button>Find Resources</Button></Col>
+                        <Button variant="outline-secondary" onClick={event => window.location.href = "#/Compost-Learn"}>Learn How</Button>{' '}
+                        <Button variant="outline-secondary" onClick={event => window.location.href = "#/Compost-Resources"}>Find Resources</Button></Col>
                 </Row>
 
             </Container>
