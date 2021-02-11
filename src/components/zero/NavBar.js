@@ -21,32 +21,39 @@ export const NavBar = () => {
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
                     <NavDropdown title="REDUCE" id="collasible-nav-dropdown">
-                        <NavDropdown.Item href="#/Reduce-Learn">Tips and Tricks</NavDropdown.Item>
+                        <NavDropdown.Item href="#/Reduce-Learn">Learn How</NavDropdown.Item>
                         <NavDropdown.Item href="#/Reduce-Resources">Local Resources</NavDropdown.Item>
                     </NavDropdown>
                     <NavDropdown title="REUSE" id="collasible-nav-dropdown">
-                        <NavDropdown.Item href="#/Reuse-Learn">Learn</NavDropdown.Item>
+                        <NavDropdown.Item href="#/Reuse-Learn">Learn How</NavDropdown.Item>
                         <NavDropdown.Item href="#/Reuse-Resources">Local Resources</NavDropdown.Item>
                     </NavDropdown>
                     <NavDropdown title="RECYCLE" id="collasible-nav-dropdown">
-                        <NavDropdown.Item href="#/Recycle-Learn">Learn</NavDropdown.Item>
+                        <NavDropdown.Item href="#/Recycle-Learn">Learn How</NavDropdown.Item>
                         <NavDropdown.Item href="#/Recycle-Resources">Local Resources</NavDropdown.Item>
                     </NavDropdown>
                     <NavDropdown title="COMPOST" id="collasible-nav-dropdown">
-                        <NavDropdown.Item href="#/Compost-Learn">Learn</NavDropdown.Item>
+                        <NavDropdown.Item href="#/Compost-Learn">Learn How</NavDropdown.Item>
                         <NavDropdown.Item href="#/Compost-Resources">Local Resources</NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link href="#/Track">TRACK YOUR TRASH</Nav.Link>
+
                     {isLoggedIn &&
                         <>
+
                             <Button className="nav-link text-right" variant="link" onClick={logout} style={{ border: "0" }}>LOGOUT</Button>
+
                         </>
+
                     }
                     {!isLoggedIn &&
                         <>
-                            <Nav.Link href="#/login">LOGIN</Nav.Link>
+
+                            <Nav.Link className="ml-auto" href="#/login">LOGIN</Nav.Link>
+
                         </>
                     }
+
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

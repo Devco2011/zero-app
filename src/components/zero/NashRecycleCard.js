@@ -1,25 +1,26 @@
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Nav, Col, ListGroup } from 'react-bootstrap';
+import { FaExternalLinkAlt } from 'react-icons/fa';
+import { IconContext } from "react-icons";
 
 export const NashRecycleCard = ({ resource }) => {
     return (
         <>
 
-            <Col className="col-4 mt-5">
-                <Card className="h-100" style={{ width: '18rem' }} bg="primary">
-                    <Card.Body>
-                        <Card.Title >{resource.facility_name}</Card.Title>
-                        <Card.Text>
-                            {resource.address}, {resource.city}, {resource.st}, {resource.zip}
-                        </Card.Text>
-                        <Card.Text>
-                            <strong>Phone: </strong>{resource.phone}
-                        </Card.Text>
-                        <Card.Link href={resource.website_url_more_information}>Website</Card.Link>
-                    </Card.Body>
-                </Card>
-            </Col>
+            <IconContext.Provider value={{ style: { verticalAlign: 'middle' }, color: "secondary", className: "global-class-name" }}>
+                <Col className="col-12 col-md-10 pl-3 mt-3">
 
+                    <Nav.Link href={resource.website_url_more_information}><ListGroup.Item action variant="secondary"><FaExternalLinkAlt className="pr-1" /> <p><h6>{resource.facility_name}</h6></p>
+                        <p><strong>Address:</strong> {resource.open}</p>
+                        <p><strong>When:</strong> {resource.address}, {resource.city}, {resource.st}, {resource.zip}</p>
+                        <p><strong>Phone:</strong> {resource.phone}</p>
+                        <p><strong>Website:</strong> {resource.website_url_more_information}</p> </ListGroup.Item></Nav.Link>
+
+
+
+
+                </Col>
+            </IconContext.Provider>
         </>
     )
 }

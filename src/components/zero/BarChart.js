@@ -3,28 +3,9 @@ import { Bar } from 'react-chartjs-2'
 
 import { getTrash } from './../../modules/APICalls'
 
-export const BarChart = () => {
+export const BarChart = ({ getAllTrash, newTrashArray }) => {
 
-    const [newTrashArray, setNewTrashArray] = useState([])
-
-    const getAllTrash = () => {
-        getTrash()
-            .then(data => {
-                let newArray = Object.keys(data).map((key) => {
-                    data[key].fbid = key;
-                    return data[key];
-                });
-                setNewTrashArray(newArray)
-
-                console.log("dateArray", newArray)
-            })
-
-    }
-
-    useEffect(() => {
-        getAllTrash()
-    }, [])
-
+    console.log("new trash", newTrashArray)
     const allDatesArray = newTrashArray.map((trash) => {
         return (trash.date)
     })
