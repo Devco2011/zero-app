@@ -14,7 +14,11 @@ import { RecycleResources } from './zero/RecycleResources';
 import { CompostLearn } from './zero/ComposteLearn';
 import { CompostResources } from './zero/ComposteResources';
 import { Track } from './zero/Track';
+import { BathPersonal } from './zero/BathPersonal';
+import { Household } from './zero/HouseHold';
+import { Drink } from './zero/Drink';
 import { Footer } from './zero/Footer';
+
 
 export const ApplicationViews = () => {
     const { isLoggedIn } = useContext(FirebaseContext)
@@ -35,6 +39,20 @@ export const ApplicationViews = () => {
                 <Route path="/Reduce-Resources">
 
                     <ReduceResources />
+                </Route>
+
+                <Route path="/Reduce-Bath-Personal">
+
+                    <BathPersonal />
+
+                </Route><Route path="/Reduce-Household-Kitchen-Cleaning">
+
+                    <Household />
+                </Route>
+
+                <Route path="/Reduce-For-Drinkers">
+
+                    <Drink />
                 </Route>
 
                 <Route path="/Reuse-Learn">

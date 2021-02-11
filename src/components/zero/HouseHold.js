@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { getResourceCategories } from "./../../modules/APICalls";
 import firebase from "firebase";
+import { Pagination } from './Pagination';
 import { Container, Row, Col, CardDeck } from 'react-bootstrap';
 import { ReduceResourcesCard } from './ReduceResourcesCard'
 
 export const Household = () => {
 
     const [resourceArray, setResourceArray] = useState([])
+    const [loading, setLoading] = useState(false);
+    const [currentPage, setCurrentPage] = useState(1)
+    const [postsPerPage] = useState(2)
 
     const getAllResources = () => {
         getResourceCategories(6)
@@ -16,7 +20,6 @@ export const Household = () => {
                     return data[key];
                 });
                 setResourceArray(newArray)
-                console.log("resource array", newArray)
             })
 
 
@@ -26,6 +29,13 @@ export const Household = () => {
     useEffect(() => {
         getAllResources()
     }, [])
+
+    const indexOfLastPost = currentPage * postsPerPage;
+    const indexOfFirstPost = indexOfLastPost - postsPerPage;
+    const currentPosts = resourceArray.slice(indexOfFirstPost, indexOfLastPost);
+
+    const paginate = pageNumber =>
+        setCurrentPage(pageNumber);
 
 
     return (
@@ -37,11 +47,11 @@ export const Household = () => {
                     </Col>
                 </Row>
                 <CardDeck className="mt-2">
-                    {resourceArray.map(resource => {
+                    {currentPosts.map(resource => {
                         return <ReduceResourcesCard resource={resource} key={resource.id} />
                     })}
                 </CardDeck>
-
+                <Pagination postsPerPage={postsPerPage} totalPosts={resourceArray.length} paginate={paginate} />
             </Container>
         </>
     )

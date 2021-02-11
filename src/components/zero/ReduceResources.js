@@ -7,6 +7,7 @@ import { Drink } from './Drink'
 import { Secondhand } from './Secondhand'
 import { Bulk } from './Bulk';
 import { FarmersMarkets } from './FarmersMarkets'
+import { BathPersonal } from './BathPersonal';
 
 export const ReduceResources = () => {
 
@@ -34,16 +35,14 @@ export const ReduceResources = () => {
     return (
         <>
             <Container className="mb-3">
-                <Row>
-                    <Col className="col-12">
-                        <h3>Bath and Personal Care</h3>
+                <Row className="justify-content-center mt-5 mb-5">
+                    <Col className="col-12 col-md-10">
+                        <h3>These locals can help you reduce on your journey to zero waste.</h3>
                     </Col>
                 </Row>
-                <CardDeck className="mt-2">
-                    {resourceArray.map(resource => {
-                        return <ReduceResourcesCard resource={resource} key={resource.id} />
-                    })}
-                </CardDeck>
+                <Row>
+                    <BathPersonal />
+                </Row>
                 <hr></hr>
                 <Row>
                     <Household />
