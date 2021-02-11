@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { getResourceCategories } from "./../../modules/APICalls";
 import { Container, Row, Col, CardDeck } from 'react-bootstrap';
-import { ReduceResourcesCard } from './ReduceResourcesCard'
+import { ReduceResourcesCard } from './ReduceResourcesCard';
+import { Pagination } from './Pagination';
 
 export const CompostResources = () => {
 
     const [resourceArray, setResourceArray] = useState([])
+    const [loading, setLoading] = useState(false);
+    const [currentPage, setCurrentPage] = useState(1)
+    const [postsPerPage] = useState(2)
 
     const getAllResources = () => {
         getResourceCategories(3)
@@ -26,21 +30,27 @@ export const CompostResources = () => {
         getAllResources()
     }, [])
 
+    const indexOfLastPost = currentPage * postsPerPage;
+    const indexOfFirstPost = indexOfLastPost - postsPerPage;
+    const currentPosts = resourceArray.slice(indexOfFirstPost, indexOfLastPost);
+
+    const paginate = pageNumber =>
+        setCurrentPage(pageNumber);
 
     return (
         <>
             <Container className="mt-5">
-                <Row>
-                    <Col className="col-12 pl-4">
-                        <h5>Local Compost Resources</h5>
+                <Row className="justify-content-center mt-5 mb-3">
+                    <Col className="col-12 col-md-10">
+                        <h3>Great local resources to help you on your composting journey.</h3>
                     </Col>
                 </Row>
                 <CardDeck className="mt-2">
-                    {resourceArray.map(resource => {
+                    {currentPosts.map(resource => {
                         return <ReduceResourcesCard resource={resource} key={resource.id} />
                     })}
                 </CardDeck>
-
+                <Pagination postsPerPage={postsPerPage} totalPosts={resourceArray.length} paginate={paginate} />
             </Container>
         </>
     )

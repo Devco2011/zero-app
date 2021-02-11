@@ -32,9 +32,14 @@ export const RecycleResources = () => {
     return (
         <>
             <Container className="mb-3">
+                <Row className="justify-content-center mt-5 mb-3">
+                    <Col className="col-12 col-md-10">
+                        <h3>If you can't reuse it or compost it, recycle it!</h3>
+                    </Col>
+                </Row>
                 <Row>
-                    <Col className="col-12">
-                        <h3>Recycle Resources</h3>
+                    <Col className="col-12 pl-4 mt-3">
+                        <h5>Curbside Glass</h5>
                     </Col>
                 </Row>
                 <CardDeck className="mt-2">

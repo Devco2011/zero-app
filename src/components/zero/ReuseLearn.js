@@ -42,9 +42,9 @@ export const ReuseLearn = () => {
     return (
         <>
             <Container>
-                <Row>
-                    <Col className="col-12">
-                        <h3>How To Reuse</h3>
+                <Row className="justify-content-center mt-5 mb-3">
+                    <Col className="col-12 col-md-10">
+                        <h3>Consider replacing your disposables with reusables.</h3> <p><h3>These videos and articles will help you get started.</h3></p>
                     </Col>
                 </Row>
                 <CardDeck className="mt-2">

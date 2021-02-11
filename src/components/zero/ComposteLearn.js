@@ -42,9 +42,9 @@ export const CompostLearn = () => {
     return (
         <>
             <Container>
-                <Row>
-                    <Col className="col-12">
-                        <h3>How To Compost</h3>
+                <Row className="justify-content-center mt-5 mb-3">
+                    <Col className="col-12 col-md-10">
+                        <h3>Food and organic matter make up 60% of landfills.</h3><p><h3>Why not compost instead?</h3></p>
                     </Col>
                 </Row>
                 <CardDeck className="mt-2">

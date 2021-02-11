@@ -4,7 +4,7 @@ import { addTrash } from './../../modules/APICalls';
 
 import { Button } from 'react-bootstrap';
 
-export const AddTrashButton = () => {
+export const AddTrashButton = ({ getAllTrash }) => {
 
     const [trashItem, setTrashItem] = useState({});
 
@@ -20,14 +20,14 @@ export const AddTrashButton = () => {
         const newItemObj = { ...trashItem };
         newItemObj.uid = firebase.auth().currentUser.uid;
         newItemObj.date = Date.now();
-        addTrash(newItemObj)
+        addTrash(newItemObj).then(getAllTrash)
 
     }
 
 
     return (
         <>
-            <Button onClick={handleAddItem}>Add A Bag of Trash</Button>
+            <Button variant="secondary" onClick={handleAddItem}>Add A Bag of Trash</Button>
         </>
     )
 }
