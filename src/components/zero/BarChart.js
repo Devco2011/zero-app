@@ -46,23 +46,23 @@ export const BarChart = () => {
     const janArray = monthAndYearArray.filter((item) => {
         return item.month === 0 && item.year === thisYear
     })
-    console.log("jan", janArray)
+
     const febArray = monthAndYearArray.filter((item) => {
         return item.month === 1 && item.year === thisYear
     })
-    console.log("feb", febArray)
+
     const marArray = monthAndYearArray.filter((item) => {
         return item.month === 2 && item.year === thisYear
     })
-    console.log("mar", marArray)
+
     const aprArray = monthAndYearArray.filter((item) => {
         return item.month === 3 && item.year === thisYear
     })
-    console.log("apr", aprArray)
+
     const mayArray = monthAndYearArray.filter((item) => {
         return item.month === 4 && item.year === thisYear
     })
-    console.log("may", mayArray)
+
     const junArray = monthAndYearArray.filter((item) => {
         return item.month === 5 && item.year === thisYear
     })

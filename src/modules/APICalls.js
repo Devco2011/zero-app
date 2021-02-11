@@ -76,32 +76,16 @@ export const getRecyclingCenters = () => {
 export const getTrash = () => {
     return fetch(`${dataURL}/zerodb/trash.json/?orderBy="uid"&equalTo="${firebase.auth().currentUser.uid}"`)
         .then(response => response.json())
-    // .then(parsedResponse => {
-    //     console.log("trash call", parsedResponse)
 
-    // })
 }
 
 
-
-// const milli = () => {
-//     const n = new Date().toLocaleString()
-//     return (
-//         console.log("date", n)
-//     )
-// }
-// milli()
-
-// const currentDate = new Date("2/10/2021, 3:08:02 PM")
-// const currentMonth = currentDate.getMonth()
-// const currentYear = currentDate.getFullYear()
-
-// const date = (currentMonth + 1) + "/" + currentYear
-
-// console.log("dateTest", date)
-
-
-//Nashville.gov api Key secret: 1srolkartq8fx54ua1n7glxaswtygatll7y6jxhv9j6083t1oq
-// api key id: 4pcqdx76po3b4zoi8u5h9h22v
-// app token: sR1VjDcjqX0htyE7IlHRT1L43
-// secret token: gMcLB9jmZCB1J9HixroaXxrOhU8fm6P5dTwY
+export const addTrash = (trashObj) => {
+    return fetch(`${dataURL}/zerodb/trash.json`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(trashObj)
+    }).then(response => response.json())
+}
