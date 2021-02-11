@@ -44,7 +44,7 @@ export const ReduceLearn = () => {
             <Container>
                 <Row className="justify-content-center mt-5 mb-3">
                     <Col className="col-12 col-md-10">
-                        <h3>These articles and vides will get you on the way to less trash.</h3>
+                        <h3>These articles and videos will get you on the way to less trash.</h3>
                     </Col>
                 </Row>
                 <ListGroup className="mt-2">
