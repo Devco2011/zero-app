@@ -31,7 +31,6 @@ export const ReduceResources = () => {
         getAllResources()
     }, [])
 
-
     return (
         <>
             <Container className="mb-3">
