@@ -2,21 +2,20 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { getCategories, getResourceCategories } from '../../modules/APICalls';
 import taco from "../images/zeroLogo.png"
+import skyline from "../images/hero1.jpg"
 import firebase from 'firebase';
 
 export const Header = () => {
 
     return (
         <>
-            <Container>
-                <Row className="justify-content-center mt-5">
+            <Container fluid>
+                <Row>
                     <Col className="col-12">
 
                         <div className="images">
-                            <center><img className="logo" src={taco} height="50%" width="50%" alt="logo" /></center>
-
+                            <img className="hero" src={skyline} height="60%" width="100%" alt="Nashville skyline." />
                         </div></Col>
-                    <h6 className="mt-3 p-2">The future of Nashville's trash</h6>
                 </Row>
             </Container>
         </>
